@@ -67,7 +67,7 @@ export default function YoutubeGrid() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
-                <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                <h2 className="text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-br from-slate-900 via-slate-700 to-primary">
                     Latest form the lab.
                 </h2>
                 <p className="text-lg text-slate-500">

@@ -1,14 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { 
-  FaYoutube, 
-  FaLinkedinIn, 
-  FaXTwitter, 
-  FaInstagram,
-} from "react-icons/fa6";
-import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+  Youtube, 
+  Linkedin, 
+  Instagram,
+  Facebook,
+  Mail,
+  MapPin
+} from "lucide-react";
+import { Logo } from "./Navbar/logo";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -21,9 +23,7 @@ export default function Footer() {
           
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-extrabold text-white tracking-tight">
-                Brand<span className="text-primary">Name</span>.
-              </span>
+              <Logo/>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               We help agencies and B2B businesses scale their revenue through 
@@ -32,14 +32,15 @@ export default function Footer() {
             
             <div className="flex items-center gap-4 pt-2">
               {[
-                { icon: <FaLinkedinIn />, href: "#" },
-                { icon: <FaXTwitter />, href: "#" },
-                { icon: <FaYoutube />, href: "#" },
-                { icon: <FaInstagram />, href: "#" },
+                { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/alaminxtk" },
+                { icon: <Facebook className="w-5 h-5" />, href: "https://www.facebook.com/salaminxtk" },
+                { icon: <Youtube className="w-5 h-5" />, href: "#" },
+                { icon: <Instagram className="w-5 h-5" />, href: "#" },
               ].map((social, idx) => (
-                <Link 
+                <Link
                   key={idx} 
                   href={social.href}
+                  target="_blank"
                   className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 border border-slate-800"
                 >
                   {social.icon}
@@ -53,9 +54,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {["Cold Email System", "Lead Generation", "White Label", "Deliverability Audit", "Agency Growth"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-primary transition-colors duration-200 block w-fit">
+                  <a href="#" className="hover:text-primary transition-colors duration-200 block w-fit">
                     {item}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -66,9 +67,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {["About Us", "Success Stories", "Pricing", "Partner Program", "Careers"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-primary transition-colors duration-200 block w-fit">
+                  <a href="#" className="hover:text-primary transition-colors duration-200 block w-fit">
                     {item}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -80,13 +81,16 @@ export default function Footer() {
             </p>
             
             <div className="space-y-3 pt-2">
-              <div className="flex items-center gap-3 text-sm text-slate-400">
-                <HiOutlineMail className="text-primary text-lg" />
-                <span>hello@yourbrand.com</span>
-              </div>
+              <Link 
+                href="mailto:alamin@findanylead.com" 
+                className="flex items-center gap-3 text-sm text-slate-400 hover:text-primary transition-colors group"
+              >
+                <Mail className="text-primary w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>alamin@findanylead.com</span>
+              </Link>
               <div className="flex items-start gap-3 text-sm text-slate-400">
-                <HiOutlineLocationMarker className="text-primary text-lg mt-0.5" />
-                <span>123 Business Avenue, Suite 400,<br />New York, NY 10001</span>
+                <MapPin className="text-primary w-5 h-5 mt-0.5" />
+                <span>30 N Gould St Suite R, Sheridan, <br />WY 82801, USA</span>
               </div>
             </div>
           </div>
@@ -102,9 +106,9 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="#" className="hover:text-white transition-colors">Cookie Settings</Link>
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-white transition-colors">Cookie Settings</a>
           </div>
 
         </div>

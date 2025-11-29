@@ -59,7 +59,7 @@ export default function Hero() {
 
         <h1 ref={titleRef} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-slate-900 leading-[0.95]">
           Predictable pipeline <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 via-slate-700 to-slate-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 via-slate-700 to-primary">
             with cold email.
           </span>
         </h1>
@@ -83,18 +83,6 @@ export default function Hero() {
             View Solutions
           </Link>
         </div>
-      </div>
-
-      <div ref={videoRef} className="mt-20 w-full max-w-6xl mx-auto relative aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-slate-200/50 border border-slate-200/60 bg-slate-100">
-        <video
-          className="w-full h-full object-cover"
-          src="/banner.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
       </div>
     </section>
   );

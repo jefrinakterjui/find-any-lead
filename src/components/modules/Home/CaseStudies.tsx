@@ -68,7 +68,7 @@ export default function CaseStudies() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
             Real results. <br />
-            <span className="text-slate-400">Verifiable revenue.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 via-slate-700 to-primary">Verifiable revenue.</span>
           </h1>
           <p className="text-lg text-slate-500 leading-relaxed">
             See how we help fast-growing companies build predictable revenue engines through data-driven cold email infrastructure.

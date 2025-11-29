@@ -52,7 +52,7 @@ export default function AboutFounder() {
             The strategy behind <br /> the infrastructure.
           </h2>
 
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-sans">
             "Most companies fail at cold outreach not because of bad copy, but because of broken infrastructure. I've spent the last 7 years engineering systems that guarantee deliverability."
           </p>
           
@@ -71,7 +71,7 @@ export default function AboutFounder() {
             href="/booking"
             className="group inline-flex items-center gap-2 text-slate-900 font-semibold border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-all"
           >
-            Read my story <FiArrowUpRight className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
+            Book a call <FiArrowUpRight className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
         </div>
       </div>
