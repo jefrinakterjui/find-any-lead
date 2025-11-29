@@ -23,6 +23,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Alamin Islam" }],
   creator: "Find Any Lead",
   publisher: "Find Any Lead",
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
